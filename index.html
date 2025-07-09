@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superior Sales - Transform Your Sales Game in 12 Months</title>
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Animated Buy Button */
+        .animated-buy-button {
+            animation: pulse-glow 2s infinite, subtle-bounce 3s ease-in-out infinite;
+            transform-origin: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-buy-button:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 15px 30px rgba(234, 179, 8, 0.6) !important;
+            animation: pulse-glow 1s infinite, wiggle 0.5s ease-in-out;
+        }
+
+        .animated-buy-button:active {
+            transform: scale(0.98);
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(234, 179, 8, 0.7);
+            }
+            50% {
+                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4), 0 0 20px 5px rgba(234, 179, 8, 0.4);
+            }
+        }
+
+        @keyframes subtle-bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-3px);
+            }
+            60% {
+                transform: translateY(-1px);
+            }
+        }
+
+        @keyframes wiggle {
+            0%, 7%, 14%, 21%, 28%, 35%, 42%, 49%, 56%, 63%, 70%, 77%, 84%, 91%, 98%, 100% {
+                transform: rotate(0deg);
+            }
+            3.5%, 10.5%, 17.5%, 24.5%, 31.5%, 38.5%, 45.5%, 52.5%, 59.5%, 66.5%, 73.5%, 80.5%, 87.5%, 94.5% {
+                transform: rotate(1deg);
+            }
+        }
+
+        /* Mobile-first responsive styles */
+        @media (max-width: 768px) {
+            .mobile-title {
+                font-size: 2.5rem !important;
+                line-height: 1.1 !important;
+            }
+
+            .mobile-subtitle {
+                font-size: 1.3rem !important;
+                line-height: 1.4 !important;
+            }
+
+            .mobile-section-title {
+                font-size: 2rem !important;
+                line-height: 1.2 !important;
+            }
+
+            .mobile-text {
+                font-size: 1.1rem !important;
+                line-height: 1.5 !important;
+            }
+
+            .mobile-button {
+                font-size: 1.1rem !important;
+                padding: 16px 24px !important;
+                min-height: 50px !important;
+            }
+
+            .mobile-big-button {
+                font-size: 1.3rem !important;
+                padding: 20px 32px !important;
+                min-height: 60px !important;
+            }
+
+            .mobile-book {
+                width: 250px !important;
+                height: 312px !important;
+            }
+
+            .mobile-price {
+                font-size: 2.5rem !important;
+            }
+
+            .mobile-old-price {
+                font-size: 1.3rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div style="background: linear-gradient(135deg, #4b5563 0%, #000000 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem;">
+        <div style="max-width: 1200px; text-align: center;">
+            <!-- Urgency Banner -->
+            <div style="background: linear-gradient(45deg, #6b7280, #4b5563); color: white; padding: 12px 24px; border-radius: 50px; margin-bottom: 24px; display: inline-block; font-weight: bold; font-size: 18px; box-shadow: 0 0 20px #6b7280;">
+                ⏰ LIMITED TIME: 48 HOURS ONLY - $9.99
+            </div>
+
+            <!-- New Motivational Headline -->
+            <div style="margin-bottom: 32px;">
+                <h2 style="font-size: clamp(1.8rem, 4.5vw, 2.8rem); font-weight: 700; margin-bottom: 12px; line-height: 1.2; color: #eab308; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif; letter-spacing: -0.02em;">
+                    Sales Slumps Are Optional. Here's How to Crush Them — <span style="color: #dc2626;">Fast.</span>
+                </h2>
+                <p style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); color: #000000; font-weight: 600; max-width: 600px; margin: 0 auto; font-style: italic; font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;">
+                    One eBook, zero fluff, real results
+                </p>
+            </div>
+
+            <h1 class="mobile-title" style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; margin-bottom: 24px; line-height: 1.2;">
+                From <span style="color: #d1d5db;">$900K to $2.4M</span><br>
+                in Just 12 Months
+            </h1>
+
+            <p class="mobile-subtitle" style="font-size: clamp(1.1rem, 3vw, 1.5rem); margin-bottom: 32px; color: #e5e7eb; max-width: 800px; margin-left: auto; margin-right: auto; padding: 0 16px;">
+                The exact strategies that transformed my sales career in the hardscape industry - 
+                <strong>now available for ANY sales professional</strong>
+            </p>
+
+            <!-- Book Cover Photo and CTA -->
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="margin-bottom: 24px;">
+                    <img src="https://i.imgur.com/2cTdj0B.jpeg" alt="Superior Sales Book Cover" class="mobile-book" style="width: clamp(250px, 60vw, 350px); height: clamp(312px, 75vw, 438px); border-radius: 8px; object-fit: cover; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+                </div>
+
+                <button onclick="scrollToOffer()" class="mobile-button" style="background-color: #eab308; color: #000000; font-weight: bold; padding: clamp(12px, 3vw, 16px) clamp(24px, 6vw, 32px); border-radius: 50px; font-size: clamp(16px, 4vw, 20px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); text-decoration: none; display: inline-block; border: none; cursor: pointer; width: auto; max-width: 90vw; text-align: center;">
+                    GET YOUR COPY NOW - $9.99
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pain Points Section -->
+    <div style="padding: 64px 16px; background-color: #111827;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="mobile-section-title" style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: bold; text-align: center; margin-bottom: clamp(32px, 6vw, 48px); color: #d1d5db; padding: 0 16px;">
+                Are You Struggling With These Sales Challenges?
+            </h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(16px, 4vw, 32px); margin-bottom: clamp(32px, 6vw, 48px); padding: 0 16px;">
+                <div style="background-color: #000000; padding: 24px; border-radius: 8px; border: 2px solid #4b5563; text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">😰</div>
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">Struggling to Close Deals?</h3>
+                    <p style="color: #9ca3af;">You know your product inside out, but when it comes to sealing the deal, prospects slip away at the last moment.</p>
+                </div>
+
+                <div style="background-color: #000000; padding: 24px; border-radius: 8px; border: 2px solid #4b5563; text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🤝</div>
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">Can't Connect with Clients?</h3>
+                    <p style="color: #9ca3af;">Building rapport feels forced and unnatural. You struggle to relate to prospects and earn their trust.</p>
+                </div>
+
+                <div style="background-color: #000000; padding: 24px; border-radius: 8px; border: 2px solid #4b5563; text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">😔</div>
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">Feeling Like Something's Wrong?</h3>
+                    <p style="color: #9ca3af;">You question your abilities and lack confidence when approaching leads, especially in their homes.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <p class="mobile-text" style="font-size: 20px; margin-bottom: 24px; color: #e5e7eb;">
+                    <strong>You're not alone.</strong> I felt exactly the same way before discovering these game-changing strategies.
+                </p>
+                <button onclick="scrollToOffer()" style="background-color: #eab308; color: #000000; font-weight: bold; padding: 12px 24px; border-radius: 50px; font-size: 18px; text-decoration: none; display: inline-block; border: none; cursor: pointer;">
+                    Show Me The Solution →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transformation Story -->
+    <div style="padding: 64px 16px; background-color: white; color: #000000;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: bold; text-align: center; margin-bottom: clamp(32px, 6vw, 48px); color: #374151; padding: 0 16px;">
+                My Incredible Transformation Story
+            </h2>
+
+            <div style="background-color: #f3f4f6; padding: clamp(16px, 4vw, 32px); border-radius: 8px; margin-bottom: clamp(24px, 4vw, 32px); margin: 0 16px clamp(24px, 4vw, 32px) 16px;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 32px); margin-bottom: 24px; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <div style="font-size: clamp(24px, 5vw, 32px); font-weight: 900; color: #4b5563; margin-bottom: 8px;">BEFORE</div>
+                        <div style="font-size: clamp(20px, 4vw, 28px); font-weight: bold; color: #374151;">$900K</div>
+                        <p style="color: #4b5563; font-size: clamp(14px, 3vw, 16px);">Annual Sales</p>
+                    </div>
+                    <div style="font-size: clamp(32px, 6vw, 48px); color: #4b5563;">→</div>
+                    <div style="text-align: center;">
+                        <div style="font-size: clamp(24px, 5vw, 32px); font-weight: 900; color: #4b5563; margin-bottom: 8px;">AFTER</div>
+                        <div style="font-size: clamp(20px, 4vw, 28px); font-weight: bold; color: #059669;">$2.4M</div>
+                        <p style="color: #4b5563; font-size: clamp(14px, 3vw, 16px);">Annual Sales</p>
+                    </div>
+                </div>
+                <p style="font-size: clamp(16px, 3vw, 18px); color: #374151; text-align: center;">
+                    <strong>In just 12 months</strong>, I went from struggling with the same challenges you face today 
+                    to becoming a top performer in the competitive hardscape industry.
+                </p>
+            </div>
+
+            <p style="font-size: 20px; margin-bottom: 24px; color: #374151; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center;">
+                The strategies in "Superior Sales" aren't theory - they're battle-tested methods that 
+                <strong>actually work in real-world sales situations</strong>. Whether you're selling in-home services, 
+                products, or anything else, these principles will transform your results.
+            </p>
+
+            <div style="background-color: #f9fafb; padding: 32px; border-radius: 12px; margin: 32px auto; max-width: 800px; border-left: 4px solid #eab308;">
+                <p style="font-size: 18px; color: #374151; line-height: 1.6; text-align: left; margin-bottom: 0;">
+                    I know what it feels like to pour everything you have into sales and still wonder, "Why am I not further ahead?" The late nights worrying if you'll hit your numbers… the fake smiles when a deal falls through… the fear of letting your family down because you're not closing enough. I've been right there in that same lonely place, questioning if I was even cut out for this. But here's what I learned — you don't need to hustle harder or sell your soul to succeed. You need the right mindset, the right energy, and a simple system that actually works. That's why I wrote this book — because I know how much this can change your life if you let it. These tools helped me jump from $900K to $2.4 million in sales in just one year. It's not hype — it's proof that you can do it too. Imagine waking up excited to work, feeling proud of the deals you're closing, and knowing you're finally providing the life your family deserves. Don't keep struggling alone. You're one choice away from transforming your sales and your future. This book is that choice. Grab it now — because you deserve to win. Let's do this together.
+                </p>
+            </div>
+
+            <div style="text-align: center;">
+                <button onclick="scrollToOffer()" style="background-color: #eab308; color: #000000; font-weight: bold; padding: 16px 32px; border-radius: 50px; font-size: 20px; text-decoration: none; display: inline-block; border: none; cursor: pointer;">
+                    I Want These Results Too!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- What You'll Learn -->
+    <div style="padding: 64px 16px; background-color: #000000;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: bold; text-align: center; margin-bottom: clamp(32px, 6vw, 48px); color: #d1d5db; padding: 0 16px;">
+                What You'll Discover Inside "Superior Sales"
+            </h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(16px, 4vw, 32px); margin-bottom: clamp(32px, 6vw, 48px); padding: 0 16px;">
+                <div style="background-color: #111827; padding: 24px; border-radius: 8px; border-left: 4px solid #6b7280;">
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">✅ Confidence-Building Techniques</h3>
+                    <p style="color: #9ca3af;">Walk into any home or meeting with unshakeable confidence that commands respect</p>
+                </div>
+
+                <div style="background-color: #111827; padding: 24px; border-radius: 8px; border-left: 4px solid #6b7280;">
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">✅ Instant Rapport Builders</h3>
+                    <p style="color: #9ca3af;">Connect with any prospect within minutes using proven psychological triggers</p>
+                </div>
+
+                <div style="background-color: #111827; padding: 24px; border-radius: 8px; border-left: 4px solid #6b7280;">
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">✅ Closing Secrets</h3>
+                    <p style="color: #9ca3af;">The exact words and techniques that turn "maybe" into "yes" every time</p>
+                </div>
+
+                <div style="background-color: #111827; padding: 24px; border-radius: 8px; border-left: 4px solid #6b7280;">
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">✅ Objection Handling Mastery</h3>
+                    <p style="color: #9ca3af;">Turn every objection into an opportunity to strengthen your position</p>
+                </div>
+
+                <div style="background-color: #111827; padding: 24px; border-radius: 8px; border-left: 4px solid #6b7280;">
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">✅ In-Home Sales Strategies</h3>
+                    <p style="color: #9ca3af;">Specialized techniques for selling in the prospect's personal space</p>
+                </div>
+
+                <div style="background-color: #111827; padding: 24px; border-radius: 8px; border-left: 4px solid #6b7280;">
+                    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #d1d5db;">✅ Mindset Transformation</h3>
+                    <p style="color: #9ca3af;">Eliminate self-doubt and develop the winner's mentality of top performers</p>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <button onclick="scrollToOffer()" style="background-color: #eab308; color: #000000; font-weight: bold; padding: 16px 32px; border-radius: 50px; font-size: 20px; text-decoration: none; display: inline-block; border: none; cursor: pointer;">
+                    Get Instant Access Now!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Proof -->
+    <div style="padding: 64px 16px; background-color: #111827;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: bold; text-align: center; margin-bottom: clamp(32px, 6vw, 48px); color: #d1d5db; padding: 0 16px;">
+                Join Thousands of Sales Professionals Getting Results
+            </h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(16px, 4vw, 32px); padding: 0 16px;">
+                <div style="background-color: #000000; padding: 24px; border-radius: 8px; text-align: center;">
+                    <div style="color: #fbbf24; font-size: 24px; margin-bottom: 12px;">⭐⭐⭐⭐⭐</div>
+                    <p style="color: #d1d5db; margin-bottom: 16px; font-style: italic;">"These strategies completely changed my approach to sales. My closing rate doubled in just 3 months!"</p>
+                    <p style="color: #d1d5db; font-weight: bold;">- Sarah M., Real Estate</p>
+                </div>
+
+                <div style="background-color: #000000; padding: 24px; border-radius: 8px; text-align: center;">
+                    <div style="color: #fbbf24; font-size: 24px; margin-bottom: 12px;">⭐⭐⭐⭐⭐</div>
+                    <p style="color: #d1d5db; margin-bottom: 16px; font-style: italic;">"Finally, a sales book that actually works! The confidence techniques alone were worth 10x the price."</p>
+                    <p style="color: #d1d5db; font-weight: bold;">- Mike T., Insurance</p>
+                </div>
+
+                <div style="background-color: #000000; padding: 24px; border-radius: 8px; text-align: center;">
+                    <div style="color: #fbbf24; font-size: 24px; margin-bottom: 12px;">⭐⭐⭐⭐⭐</div>
+                    <p style="color: #d1d5db; margin-bottom: 16px; font-style: italic;">"I went from struggling to hit quota to being the top performer in my company. This book is gold!"</p>
+                    <p style="color: #d1d5db; font-weight: bold;">- Jennifer L., Solar Sales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Offer Section -->
+    <div id="offer" style="background: linear-gradient(135deg, #4b5563 0%, #000000 100%); padding: 64px 16px;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <!-- Countdown Timer -->
+            <div style="background: linear-gradient(45deg, #6b7280, #4b5563); color: white; padding: 32px; border-radius: 50px; margin-bottom: 32px; text-align: center;">
+                <div style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">⏰ LIMITED TIME OFFER</div>
+                <div style="font-size: 18px; margin-bottom: 16px;">This special price expires in:</div>
+                <div id="countdown" style="font-size: 32px; font-weight: 900;">47:59:59</div>
+            </div>
+
+            <h2 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin-bottom: 24px; text-align: center; padding: 0 16px; font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif; letter-spacing: -0.02em;">
+                You ready to take control of your sales without learning some magic script. Click the link below and grab your copy today!
+            </h2>
+
+            <div style="background-color: #eab308; color: #000000; padding: clamp(16px, 4vw, 32px); border-radius: 8px; margin-bottom: clamp(24px, 4vw, 32px); max-width: 400px; margin-left: auto; margin-right: auto; text-align: center; font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif; box-shadow: 0 10px 25px rgba(234, 179, 8, 0.3);">
+                <div style="color: #000000; text-decoration: line-through; font-size: clamp(18px, 4vw, 24px); margin-bottom: 8px; font-weight: 500;">Regular Price: $29.99</div>
+                <div class="mobile-price" style="color: #dc2626; font-size: clamp(28px, 6vw, 36px); font-weight: 900; margin-bottom: 16px;">Special Price: $9.99</div>
+                <div style="color: #000000; font-weight: 600; font-size: clamp(16px, 3vw, 18px);">You Save $20.00!</div>
+            </div>
+
+            <p style="font-size: clamp(16px, 3vw, 20px); margin-bottom: clamp(24px, 4vw, 32px); max-width: 600px; margin-left: auto; margin-right: auto; text-align: center; padding: 0 16px;">
+                Don't let another day pass struggling with the same sales challenges. 
+                <strong>Transform your career starting today!</strong>
+            </p>
+
+            <a href="https://www.amazon.com/dp/B0FGVW6F1D" target="_blank" class="mobile-big-button animated-buy-button" style="background-color: #eab308; color: #000000; font-weight: bold; padding: clamp(16px, 4vw, 24px) clamp(32px, 8vw, 48px); border-radius: 50px; font-size: clamp(18px, 4vw, 24px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); text-decoration: none; display: inline-block; margin-bottom: 24px; max-width: 90vw; text-align: center;">
+                🛒 BUY NOW ON AMAZON - $9.99
+            </a>
+
+            <div style="font-size: 14px; color: #d1d5db; margin-bottom: 32px; text-align: center;">
+                ✅ Instant Digital Download<br>
+                ✅ Compatible with all devices
+            </div>
+
+            <!-- Follow CTA -->
+            <div style="border-top: 1px solid #4b5563; padding-top: 32px; text-align: center;">
+                <p style="font-size: 18px; margin-bottom: 16px;">Want more sales tips and strategies?</p>
+                <a href="https://www.threads.com/@superior_sales_coaching?xmt=AQF0UctejtKl817_FvBrxX3BDr7lQkgyYMgvwN8iMbNQnD8" target="_blank" style="background-color: white; color: #000000; font-weight: bold; padding: 12px 24px; border-radius: 50px; text-decoration: none; display: inline-block;">
+                    📱 Follow for More Sales Secrets
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #000000; padding: 32px 16px; text-align: center;">
+        <p style="color: #6b7280;">© 2024 Superior Sales. Transform your sales career today.</p>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const endTime = now + (48 * 60 * 60 * 1000); // 48 hours from now
+
+            setInterval(function() {
+                const currentTime = new Date().getTime();
+                const timeLeft = endTime - currentTime;
+
+                const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById('countdown').innerHTML = 
+                    String(hours).padStart(2, '0') + ':' + 
+                    String(minutes).padStart(2, '0') + ':' + 
+                    String(seconds).padStart(2, '0');
+
+                if (timeLeft < 0) {
+                    document.getElementById('countdown').innerHTML = "OFFER EXPIRED";
+                }
+            }, 1000);
+        }
+
+        // Smooth scroll to offer
+        function scrollToOffer() {
+            document.getElementById('offer').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Initialize countdown on page load
+        updateCountdown();
+    </script>
+</body>
+</html>
